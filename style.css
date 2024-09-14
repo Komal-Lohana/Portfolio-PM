@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid #004080;
+    animation: fadeIn 1s ease-in;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: scaleIn 1s ease-in;
+}
+
+h1 {
+    margin: 10px 0 5px;
+    font-size: 2em;
+    animation: fadeInUp 1s ease-in;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #008042;
+    color: #fff;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.resume-button:hover {
+    background: #006627;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 0px;
+    /* background: #fff; */
+    margin-bottom: 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+   
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+h2 {
+    margin: 20px 0;
+    color: #003366;
+    animation: fadeInUp 1.2s ease-in;
+}
+
+h3 {
+    margin: 10px 0 5px;
+    color: #003366;
+    animation: fadeInUp 1.4s ease-in;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    animation: fadeIn 1.6s ease-in;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004080;
+}
+
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-top: 5px solid #004080;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
